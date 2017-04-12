@@ -1,0 +1,6 @@
+devel_space: /home/ezra/armrobot/devel
+install: false
+install_space: /home/ezra/armrobot/install
+profile: default
+source_space: /home/ezra/armrobot/src
+workspace: /home/ezra/armrobot
