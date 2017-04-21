@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<robot name="arm">
+	
+	<link name="base_link">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder length="0.2" radius="0.07"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.2" radius="0.07"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<link name="link1">
+		<visual>
+			<origin xyz="0.15 0 0" rpy="0 1.5708 0"/>
+			<geometry>
+				<cylinder length="0.3" radius="0.03"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.3" radius="0.03"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<link name="link2">
+		<visual>
+			<origin xyz="0.135 0 0" rpy="0 1.5708 0"/>
+			<geometry>
+				<cylinder length="0.27" radius="0.03"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.27" radius="0.03"/>
+			</geometry>
+		</collision>
+	</link>	
+	<link name="vlink"/>
+	<link name="link3">
+		<visual>
+			<origin xyz="0.015 0 0" rpy="0 1.5708 0"/>
+			<geometry>
+				<cylinder length="0.03" radius="0.03"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.03" radius="0.03"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<link name="link4">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder length="0.4" radius="0.01"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.4" radius="0.01"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="bl2L1" type="revolute">
+		<parent link="base_link"/>
+		<child link="link1"/>
+		<origin xyz="0 0 0.1" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-3.14" upper="3.14" velocity="0.02"/>
+	</joint>
+
+	<joint name="L12L2" type="revolute">
+		<parent link="link1"/>
+		<child link="link2"/>
+		<origin xyz="0.285 0 0.06" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-3.14" upper="3.14" velocity="0.02"/>
+	</joint>
+
+	<joint name="L22VL" type="revolute">
+		<parent link="link2"/>
+		<child link="vlink"/>
+		<origin	xyz="0.27 0 0" rpy="0 0 0"/>
+		<axis xyz="0 1 0"/>
+		<limit effort="1000.0" lower="-1.5708" upper="1.5708" velocity="0.02"/>
+	</joint>
+
+	<joint name="VL2L3" type="revolute">
+		<parent link="vlink"/>
+		<child link="link3"/>
+		<origin	xyz="0 0 0" rpy="0 0 0"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="1000.0" lower="-1.5708" upper="1.5708" velocity="0.02"/>
+	</joint>
+
+	<joint name="L32L4" type="prismatic">
+		<parent link="link3"/>
+		<child link="link4"/>
+		<origin	xyz="0.015 0 0" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-0.18" upper="0.18" velocity="0.02"/>
+	</joint>
+
+</robot>

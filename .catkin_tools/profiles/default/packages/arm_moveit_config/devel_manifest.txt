@@ -1,0 +1,4 @@
+arm_moveit_config
+/home/ezra/armrobot/devel/.private/arm_moveit_config/lib/pkgconfig/arm_moveit_config.pc /home/ezra/armrobot/devel/lib/pkgconfig/arm_moveit_config.pc
+/home/ezra/armrobot/devel/.private/arm_moveit_config/share/arm_moveit_config/cmake/arm_moveit_configConfig-version.cmake /home/ezra/armrobot/devel/share/arm_moveit_config/cmake/arm_moveit_configConfig-version.cmake
+/home/ezra/armrobot/devel/.private/arm_moveit_config/share/arm_moveit_config/cmake/arm_moveit_configConfig.cmake /home/ezra/armrobot/devel/share/arm_moveit_config/cmake/arm_moveit_configConfig.cmake

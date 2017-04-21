@@ -1,0 +1,1 @@
+/home/ezra/armrobot/devel/.private/arm_moveit_config/share/arm_moveit_config/cmake/arm_moveit_configConfig.cmake

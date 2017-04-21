@@ -1,0 +1,8 @@
+prefix=/home/ezra/armrobot/devel/.private/arm_support
+
+Name: arm_support
+Description: Description of arm_support
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ezra/armrobot/devel/.private/arm_support/lib 
+Requires: 

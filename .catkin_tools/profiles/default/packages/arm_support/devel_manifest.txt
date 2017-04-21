@@ -1,0 +1,4 @@
+arm_support
+/home/ezra/armrobot/devel/.private/arm_support/lib/pkgconfig/arm_support.pc /home/ezra/armrobot/devel/lib/pkgconfig/arm_support.pc
+/home/ezra/armrobot/devel/.private/arm_support/share/arm_support/cmake/arm_supportConfig-version.cmake /home/ezra/armrobot/devel/share/arm_support/cmake/arm_supportConfig-version.cmake
+/home/ezra/armrobot/devel/.private/arm_support/share/arm_support/cmake/arm_supportConfig.cmake /home/ezra/armrobot/devel/share/arm_support/cmake/arm_supportConfig.cmake
